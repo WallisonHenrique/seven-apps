@@ -3,7 +3,7 @@
 
 ## Como executar o projeto?
 
-Na pasta principal do projeto utilize o comando `npm start`.
+Na pasta principal do projeto utilize o comando `npm install` para instalar as dependências, após instaladas utilize o comando `npm start` para executar o projeto.
 
 ## Por que utilize GraphQL?
 
