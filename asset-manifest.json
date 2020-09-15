@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/seven-apps/static/js/main.b03cc3b5.chunk.js",
+    "main.js.map": "/seven-apps/static/js/main.b03cc3b5.chunk.js.map",
+    "runtime-main.js": "/seven-apps/static/js/runtime-main.c7a5c5d6.js",
+    "runtime-main.js.map": "/seven-apps/static/js/runtime-main.c7a5c5d6.js.map",
+    "static/js/2.9f331f60.chunk.js": "/seven-apps/static/js/2.9f331f60.chunk.js",
+    "static/js/2.9f331f60.chunk.js.map": "/seven-apps/static/js/2.9f331f60.chunk.js.map",
+    "index.html": "/seven-apps/index.html",
+    "precache-manifest.897c45d44c0594e27e7a3783bbce8c85.js": "/seven-apps/precache-manifest.897c45d44c0594e27e7a3783bbce8c85.js",
+    "service-worker.js": "/seven-apps/service-worker.js",
+    "static/js/2.9f331f60.chunk.js.LICENSE.txt": "/seven-apps/static/js/2.9f331f60.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7a5c5d6.js",
+    "static/js/2.9f331f60.chunk.js",
+    "static/js/main.b03cc3b5.chunk.js"
+  ]
+}
