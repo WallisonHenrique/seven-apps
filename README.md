@@ -19,7 +19,7 @@ A aplicação tem poucos arquivos e é fácil de gerenciar. Não vi a necessidad
 
 ## Como melhorei o desempenho?
 
-Primeiro, passei a responsabilidade de lidar com a grande quantidade de dados para o GraphQL evitando o processamento no navegado. Depois criei componentes puro com a função `memo`para evitar a renderização desnecessária de componentes. Também utilizei CSS-in-JS com o Styled Components que reduz a necessidades requisições http para baixar estilos. Por fim, sei que poderia ter utilizado a técnica de ***virtualização*** que evita renderização desnecessária, mas optei por utilizar a paginação que permite escolher quantos dados exibir.
+Deixei a responsabilidade de lidar com a grande quantidade de dados para o GraphQL evitando o processamento no navegado. Depois criei componentes puro com a função `memo`para evitar a renderização desnecessária de componentes. Também utilizei CSS-in-JS com o Styled Components que reduz a necessidades requisições http para baixar estilos. Por fim, sei que poderia ter utilizado a técnica de ***virtualização*** que evita renderização desnecessária, mas optei por utilizar a paginação que permite escolher quantos dados exibir.
 
 ## Por que utilizei Styled Components?
 
