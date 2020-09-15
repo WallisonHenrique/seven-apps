@@ -1,0 +1,15 @@
+type Query {
+  search(name: String, age: Int, page: Int, size: Int): Users
+}
+
+type Users {
+	currentPage: Int
+	size: Int
+	totalPages: Int
+	users: [User]
+}
+
+type User {
+  name: String
+  age: Int
+}
