@@ -1,68 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Desafio técnico - Seven Apps
 
-In the project directory, you can run:
+O seu desáfio será de criar uma pagina web, em React.js, com uma listagem para exibir o nome e a idade dos usuários e que seja possível filtrar os usuários por nome ou idade. O estilo da pagina e dos componentes fica ao seu critério.
 
-### `npm start`
+Vamos analisar os seguintes pontos:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Organização do código
+Separação dos componentes
+Performance
+Estilo dos componentes
+Testes unitários(se possível)
+Libraries usadas
+Api para busca dos usuários: GET https://random-persons.herokuapp.com/users
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Por que utilize GraphQL?
 
-### `npm test`
+Queria reduzir o processamento de dados no navegador e passei a responsabilidade para o servidor utilizando GraphQL.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como utilizei GraphQL a partir da API Rest?
 
-### `npm run build`
+Envolvi a API Rest apenas chamando ela uma única vez na primeira solicitação, após os dados carregados as consultas graphql trabalha em cima deles.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Por que utilizei o próprio estado do React?
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+A aplicação é muito pequena, fácil de gerenciar. Não vi a necessidade de utilizar um gerenciador de estado como o Redux ou o Context API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como tentei melhorar o desempenho?
 
-### `npm run eject`
+Primeiramente passei a responsabilidade de criar paginação para o GraphQL evitando processamento no client. Depois utilizei a `função memo` do React que cria componentes puros para reduzir a renderização desnecessária. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Utilizei CSS-in-JS com o styled components que reduz a necessidades requisições http para baixar estilos.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Poderia ter utilizado também a técnica de *virtualização*, mas optei por criar a paginação.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Por que utilizei Styled Components?
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Facilidade de manutenção
 
-## Learn More
+- Eliminação de seletores CSS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Menos solicitações https
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Componentes personalizados
 
-### Code Splitting
+## Por que não fiz testes unitários?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Infelizmente estava sem tempo e não consegui implementá-los.
 
-### Analyzing the Bundle Size
+## Quais os estilos de componentes utilizei?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Basicamente utilizei os componentes de função que são altamente recomendados pela equipe do React. Além de utilizar os Hooks que fornecem aos componentes de função ferramentas para criar aplicações complexas. E o componente puro para melhorar o desempenho.
 
-### Making a Progressive Web App
+## Gostaria de saber algo?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Se tiver alguma dúvida não hesite em perguntar.
 
-### Advanced Configuration
+## Gostaria de me dar um feedback?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Se tem algum conselho ou dica ficaria feliz em ouvir.
