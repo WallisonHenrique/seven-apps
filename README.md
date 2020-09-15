@@ -7,23 +7,19 @@ Na pasta principal do projeto utilize o comando `npm start`.
 
 ## Por que utilize GraphQL?
 
-Queria reduzir o processamento de dados no navegador e passei a responsabilidade para o servidor utilizando GraphQL.
+Eu quis evitar o processamento de grande quantidade de dados no navegador, visto que a API REST fornecida não há documentação que indique parâmetros para socilitar menos dados por vez. Então, tratei os dados da minha maneira utilizando o GraphQl passando a responsabilidade para o servidor.
 
 ## Como utilizei GraphQL a partir da API Rest?
 
-Envolvi a API Rest apenas chamando ela uma única vez na primeira solicitação, após os dados carregados as consultas graphql trabalha em cima deles.
+Envolvi a API Rest chamando ela uma única vez na primeira solicitação, após isso com os dados carregados, realizei as demais consultas em cima das informações armazenadas em uma constante.
 
 ## Por que utilizei o próprio estado do React?
 
-A aplicação é muito pequena, fácil de gerenciar. Não vi a necessidade de utilizar um gerenciador de estado como o Redux ou o Context API.
+A aplicação tem poucos arquivos e é fácil de gerenciar. Não vi a necessidade de utilizar um gerenciador de estado como o Redux ou a API Context para centralizar o estado em um único local.
 
 ## Como tentei melhorar o desempenho?
 
-Primeiramente passei a responsabilidade de criar paginação para o GraphQL evitando processamento no client. Depois utilizei a `função memo` do React que cria componentes puros para reduzir a renderização desnecessária. 
-
-Utilizei CSS-in-JS com o styled components que reduz a necessidades requisições http para baixar estilos.
-
-Poderia ter utilizado também a técnica de *virtualização*, mas optei por criar a paginação.
+Primeiro, passei a responsabilidade de lidar com a grande quantidade de dados para o GraphQL evitando o processamento no navegado. Depois criei componentes puro com a função `memo`para evitar a renderização desnecessária de componentes. Também utilizei CSS-in-JS com o Styled Components que reduz a necessidades requisições http para baixar estilos. Por fim, sei que poderia ter utilizado a técnica de *virtualização* que evita renderização desnecessária, mas optei por utilizar a paginação que permite escolher quantos dados exibir.
 
 ## Por que utilizei Styled Components?
 
@@ -41,7 +37,7 @@ Infelizmente estava sem tempo e não consegui implementá-los.
 
 ## Quais os estilos de componentes utilizei?
 
-Basicamente utilizei os componentes de função que são altamente recomendados pela equipe do React. Além de utilizar os Hooks que fornecem aos componentes de função ferramentas para criar aplicações complexas. E o componente puro para melhorar o desempenho.
+Basicamente utilizei os componentes de função que são altamente recomendados pela equipe do React. Além de utilizar os Hooks que fornecem aos componentes de função ferramentas para criar aplicações complexas. E o componente puro para melhorar o desempenho evitando renderização desnecessária.
 
 ## Gostaria de saber algo?
 
