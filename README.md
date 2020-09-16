@@ -5,9 +5,9 @@
 
 Na pasta principal do projeto utilize o comando `npm install` para instalar as dependências, após instaladas utilize o comando `npm start` para executar o projeto.
 
-## Por que utilize GraphQL?
+## Por que utilizei GraphQL?
 
-Eu quis evitar o processamento de grande quantidade de dados no navegador, visto que a API REST fornecida não há documentação que indique parâmetros para socilitar menos dados por vez. Então, tratei os dados da minha maneira utilizando o GraphQl passando a responsabilidade para o servidor.
+Eu quis evitar o processamento de grande quantidade de dados no navegador, visto que a API REST fornecida não há documentação que indique parâmetros para socilitar menos dados por vez. Então, tratei os dados da minha maneira utilizando o GraphQL passando a responsabilidade para o servidor.
 
 ## Como utilizei GraphQL a partir da API Rest?
 
@@ -19,7 +19,7 @@ A aplicação tem poucos arquivos e é fácil de gerenciar. Não vi a necessidad
 
 ## Como melhorei o desempenho?
 
-Deixei a responsabilidade de lidar com a grande quantidade de dados para o GraphQL evitando o processamento no navegado. Depois criei componentes puro com a função `memo`para evitar a renderização desnecessária de componentes. Também utilizei CSS-in-JS com o Styled Components que reduz a necessidades requisições http para baixar estilos. Por fim, sei que poderia ter utilizado a técnica de ***virtualização*** que evita renderização desnecessária, mas optei por utilizar a paginação que permite escolher quantos dados exibir.
+Deixei a responsabilidade de lidar com a grande quantidade de dados para o GraphQL evitando o processamento no navegador. Depois criei componente puro com a função `memo`para evitar a renderização desnecessária de componentes. Também utilizei CSS-in-JS com o Styled Components que reduz a necessidade de requisições http para baixar estilos. Por fim, sei que poderia ter utilizado a técnica de ***virtualização*** que evita renderização desnecessária, mas optei por utilizar a paginação que permite escolher quantos dados exibir.
 
 ## Por que utilizei Styled Components?
 
